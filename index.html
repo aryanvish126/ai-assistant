@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYAN - AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="assistant-grid">
+            <div class="image-container">
+                <div class="image">
+                    <div class="avatar-glow"></div>
+                </div>
+                <h1>ARYAN.H.VISHWAKARMA</h1>
+                <p>I am a Virtual Assistant with voice and AI chat. Ask me anything.</p>
+            </div>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div>
+                        <h2>Jarvis AI Assistant</h2>
+                        <p id="status">Ready to listen.</p>
+                    </div>
+                </div>
+                <div class="chat-window" id="chatWindow"></div>
+                <div class="chat-controls">
+                    <input id="userInput" type="text" placeholder="Try: open google, play music, search weather, or say hello..." autocomplete="off">
+                    <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                    <button class="talk" id="voiceBtn" title="Speak"><i class="fas fa-microphone-alt"></i></button>
+                </div>
+                <div class="api-key-row">
+                    <input type="password" id="apiKey" placeholder="OpenAI API Key (optional)">
+                    <button id="saveKey">Save</button>
+                </div>
+                <p class="hint">Enter an OpenAI API key for smarter AI replies, or use the built-in assistant mode.</p>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

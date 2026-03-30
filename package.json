@@ -1,0 +1,12 @@
+{
+  "name": "jarvis-bot",
+  "version": "1.0.0",
+  "description": "Jarvis AI assistant web app",
+  "private": true,
+  "scripts": {
+    "dev": "http-server . -c-1 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
